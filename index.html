@@ -35,20 +35,6 @@
             </div>
         </nav-->
 
-<div id="map" style="width:100%;height:350px;"></div>
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=abf6d0f06519045447600df92afde554"></script>
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapOption = { 
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
-
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-var map = new kakao.maps.Map(mapContainer, mapOption); 
-</script>
-        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
@@ -69,6 +55,28 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
                             강아지를 키우는 미란이와 고양이를 키우는 상범이가 만나 4년 연애를 거쳐 이제 한 가정을 이루고자 합니다. 고마운 분들께 한 분 한 분 찾아뵙고 소식을 전하고 싶었으나 코로나19 바이러스로 인해 이렇게 온라인으로 저희 결혼 소식을 알립니다. 저희 결혼을 축하해주세요.
                         </p>
                     </div>
+                    <!--지도 부분-->
+                    <div id="map" style="width:100%;height:350px;"></div>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=abf6d0f06519045447600df92afde554"></script>
+                    <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(37.17465685166307, 127.6264652268957), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                    // 마커가 표시될 위치입니다 
+                    var markerPosition  = new kakao.maps.LatLng(37.17465685166307, 127.6264652268957); 
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                    // marker.setMap(null);    
+                    </script>
+
                 </div>
                 <img class="img-fluid" src="img/gdsz_sit.jpg" style="padding-bottom:2rem" alt="..." />
             </div>
