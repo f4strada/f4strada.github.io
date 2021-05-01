@@ -63,7 +63,7 @@
                     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                         mapOption = { 
                             center: new kakao.maps.LatLng(37.17465685166307, 127.6264652268957), // 지도의 중심좌표
-                            level: 2 // 지도의 확대 레벨
+                            level: 1 // 지도의 확대 레벨
                         };
                     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
                     // 마커가 표시될 위치입니다 
@@ -76,8 +76,8 @@
                     marker.setMap(map);
                     // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
                     // marker.setMap(null);
-                    var iwContent = '<div style="padding:5px;">파란기와집</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-                        iwPosition = new kakao.maps.LatLng(37.1747, 127.6264652268957), //인포윈도우 표시 위치입니다
+                    var iwContent = '<div style="font-family: 'Noto Sans', sans-serif;padding:5px;text-align:center">파란기와집</div>',
+                        iwPosition = new kakao.maps.LatLng(37.1749, 127.6264652268957), //인포윈도우 표시 위치입니다
                         iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
                     // 인포윈도우를 생성하고 지도에 표시합니다
