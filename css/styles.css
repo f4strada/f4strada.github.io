@@ -6303,6 +6303,10 @@ button.bg-dark:focus {
   background-color: #000000 !important;
 }
 
+.bg-gray {
+  background-color: #F2F2F2 !important;
+}
+
 a.bg-black:hover, a.bg-black:focus,
 button.bg-black:hover,
 button.bg-black:focus {
@@ -10347,7 +10351,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #F2F2F2;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
