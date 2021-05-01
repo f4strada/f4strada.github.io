@@ -10262,7 +10262,7 @@ body {
 }
 .masthead h2 {
   max-width: 20rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 @media (min-width: 768px) {
   .masthead h1 {
