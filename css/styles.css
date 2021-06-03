@@ -10246,7 +10246,7 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/wnz_main.jpg");*/
-  background: url("../img/wnz_main.jpg");
+  background: url("../img/wnz_main1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10284,7 +10284,7 @@ body {
     height: 10.5rem;
     line-height: 6.5rem;
     letter-spacing: 0rem;
-    padding-top:-1.9rem;
+    padding-top:1.6rem;
   }
   .masthead h2 {
     max-width: 30rem;
