@@ -8048,7 +8048,7 @@ button.bg-black:focus {
 
 .mt-auto,
 .my-auto {
-  margin-top: auto !important;
+  margin-top: 100px !important;
 }
 
 .mr-auto,
