@@ -38,6 +38,6 @@ body {
 
   .title{
     font-size: clamp(5rem, 10vw, 10rem);    
-    font-family: 'Grandiflora One', cursive;
+    font-family: "Grandiflora One", serif;
   }
   
