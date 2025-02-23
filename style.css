@@ -3,7 +3,7 @@ body {
     background-color: black;
     font-weight: 100;
     color: white;
-    text-align: center;
+    text-align: left;
   }
   
   header {
@@ -22,7 +22,7 @@ body {
   }
   
   p {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1vw, 2rem);
     margin: 20px auto;
     width: 80%;
     max-width: 800px;
@@ -30,14 +30,27 @@ body {
   
   footer {
     margin-top: 50px;
-    padding: 30px;
     background-color: black;
     color: white;
     font-size: 0.875rem;
   }
 
   .title{
-    font-size: clamp(5rem, 10vw, 10rem);    
     font-family: "Grandiflora One", serif;
+    font-size: clamp(5rem, 10vw, 10rem);
+    line-height: 70%;
+  }
+
+  .sub-title{
+    font-family: "Grandiflora One", serif;
+    font-size: clamp(2rem, 2vw, 4rem);
+  }
+
+  .sub-title-kor{
+    font-size: clamp(2rem, 2vw, 4rem);
+  }
+
+  .contents{
+    font-size: 1.25rem;
   }
   
