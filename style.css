@@ -211,3 +211,15 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+/* 기본 상태 (웹)에서는 줄바꿈을 없애기 */
+.mobile-break {
+    display: none;
+}
+
+/* 모바일(화면 너비 768px 이하)에서 줄바꿈 활성화 */
+@media (max-width: 768px) {
+    .mobile-break {
+        display: inline;
+    }
+}
