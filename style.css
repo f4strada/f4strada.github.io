@@ -90,7 +90,6 @@ footer {
 @media (max-width: 768px) {
     .box{
         height: 70px;
-        margin: 20px auto;
     }
     .box.active {
         height: 250px;
