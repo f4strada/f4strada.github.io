@@ -124,7 +124,7 @@ footer {
         height: 70px;
     }
     .box.active {
-        height: 700px;
+        height: 500px;
     }
     .box-content{
         height: 70px;
@@ -223,12 +223,5 @@ th, td {
 @media (max-width: 768px) {
     .mobile-break {
         display: inline;
-    }
-}
-
-/* 모바일 (화면 너비 768px 이하) 설정 - 높이를 150px로 변경 */
-@media (max-width: 768px) {
-    .box.active {
-        height: 160px;
     }
 }
