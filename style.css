@@ -126,8 +126,8 @@ footer {
     .box.active {
         height: 250px;
     }
-    .box-text{
-        padding: 10px auto;
+    .box-content{
+        height: 70px;
     }
 }
 
