@@ -22,14 +22,9 @@ footer {
     font-size: 0.875rem;
 }
 
-.sub-title{
-    font-family: "Grandiflora One", serif;
-    font-size: clamp(2rem, 2vw, 4rem);
-    margin: 20px auto; /* 브라우저 기본 마진 제거 */
-}
 
 .sub-title-kor{
-    font-size: clamp(2rem, 2vw, 4rem);
+    font-size: clamp(1.5rem, 2vw, 4rem);
     margin: 20px auto; /* 브라우저 기본 마진 제거 */
 }
 
