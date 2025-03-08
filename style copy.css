@@ -1,0 +1,244 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: white;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    overscroll-behavior: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: auto 10px;
+}
+  
+footer {
+    margin-top: 50px;
+    font-size: 0.875rem;
+}
+
+
+.sub-title-kor{
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    margin: 20px auto; /* 브라우저 기본 마진 제거 */
+}
+
+.title-text{
+    text-align: left;
+    padding: 5px;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    margin: 0 0 0 10px;
+}
+
+.contents{
+    font-size: 1.25rem;
+}
+
+.top-bar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+.grid-margin {
+    margin: 10px 0px 0px 0px;
+}
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* 호버 시 로열 블루 적용 */
+.btn-custom:hover {
+    background-color: royalblue;
+    color: white;
+}s
+
+.inquiry-button {
+    width: 70px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inquiry-button:hover {
+    background-color: royalblue;
+    color: #fff;
+}
+
+.box{
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: ghostwhite;
+    overflow: hidden;              /* 높이가 줄어들 때 내용이 넘치지 않도록 */
+    transition: height 0.3s ease;   /* 높이 전환 효과 */
+}
+
+/* 기본 (웹) 설정: .box.active의 높이를 150px로 변경 */
+.box.active {
+    height: 120px;
+}
+
+
+/* .box-detail은 기본적으로 숨김 처리 (opacity 0) */
+.box-detail {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: left;
+    line-height: 1.5;
+}
+  
+  
+/* 토글 상태에서 box-detail을 표시 */
+.box.active .box-detail {
+    opacity: 1;
+}
+
+/* box-content: 내부 요소들을 한 줄에 배치 */
+.box-content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 98%;
+    justify-content: space-between;
+}
+
+.box-text{
+    flex-grow: 1;
+    text-align: left;
+    padding: 5px;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    margin: 0 0 0 10px;
+}
+
+/* 모바일 (화면 너비 768px 이하)에서 높이를 180px로 변경 */
+@media (max-width: 768px) {
+    .box{
+        height: 70px;
+    }
+    .box.active {
+        height: 220px;
+    }
+    .box-content{
+        height: 70px;
+    }
+}
+
+.number-box{
+    width:30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 중앙 정렬 */
+    margin: auto 5px;
+}
+
+.width-cotrol{
+    width: 80%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+/* 토글 버튼 스타일 */
+.more-info {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px; /* 위치 조정을 위한 여백 */
+}
+  
+.more-info::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg); /* 기본: 90도 회전 (오른쪽 방향) */
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid white;
+    transition: transform 0.3s;
+}
+  
+  /* 토글 버튼 active 상태: 배경색 변경 및 삼각형 90도 추가 회전 */
+.more-info.active {
+    background-color: royalblue;
+}
+  
+.more-info.active::after {
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.small-text{
+    text-align: left;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin: 0;
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-top: 20px;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 0.5px solid lightgray;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* 기본 상태 (웹)에서는 첫 번째 줄바꿈을 없애기 */
+.mobile-break {
+    display: none;
+}
+
+/* 모바일(화면 너비 768px 이하)에서는 첫 번째 줄바꿈 활성화 */
+@media (max-width: 768px) {
+    .mobile-break {
+        display: inline;
+    }
+}

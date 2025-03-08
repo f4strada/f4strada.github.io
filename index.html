@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>handh</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJr+M7bX8E0X0e1a3HX3v8fY5lX+P5hV5lgm98zyZ6fyU6gCzbmBajAgtgS3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Pretendard Web Font -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/variable/pretendardvariable.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,178 +14,402 @@
   <!-- 외부 CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="hnh_img/handh_favicon.png">
+  <!--아이콘-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <main>
-    <div class="container">
-        <div class="top-bar width-cotrol">
-            <div class="inquiry-button">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScRIxb5x8Z3rTEnKOFmtVxqFJXDcwnLTPecQfx59Gl3TADq6Q/viewform?usp=dialog" target="_blank">
+    <nav class="navbar navbar-light bg-light px-3">
+        <div class="container-fluid">
+            <!-- 왼쪽 로고 -->
+            <a class="navbar-brand" href="#">
+                <img src="hnh_img/handh_logo.png" style="width: 80px;">
+            </a>
+            <!-- 오른쪽 문의하기 버튼 -->
+            <button class="btn btn-custom">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScRIxb5x8Z3rTEnKOFmtVxqFJXDcwnLTPecQfx59Gl3TADq6Q/viewform" target="_blank">
                     문의하기
                 </a>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 본문 -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1>데이터 기반 의사결정 위한 커스텀 통합환경 구축으로 <br>
+                    고객사 경쟁력을 강화합니다
+                </h1>
+            </div>
+            <div class="col-12 col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>
+                    2010년부터 에이치앤에이치는 대기업 안과 밖에서 전문가로서 정량적 리서치와 분석을 수행해 왔습니다. 
+                    에이치앤에이치는 축적된 경험과 IT 기술을 기반으로 가설 도출과 검증을 위한 다양한 사례와 방법론을 보유하고 있으며, 
+                    기업 내부에서 직접 처리하기 어려운 고난도 경쟁 데이터를 수집·제공하여 고객사의 시장 예측력을 강화합니다. 
+                    또한, 전통적 모델링 기법과 AI 기반 데이터 분석을 융합해 다양한 제약 조건 하에서도 최적의 데이터 모델을 개발, 새로운 인사이트를 제시합니다.
+                </p>
+            </div>
+            <div class="col-12 col-md-6"></div>
+        </div>
+    </div>
+
+    <canvas id="tessellationCanvas" style="width: 100%;"></canvas>
+
+    <div style="width: 100%;height: 50px;"></div>
+
+    <!-- 본문2 -->
+    <div class="container">
+        <div class="row">
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-1-square-fill"></i>
+                            강력한 웹데이터 수집 (스크래핑) SW 개발
+                        </h5>
+                        <ul>
+                            <li class="card-text">20개 이상 대형 플랫폼</li>
+                            <li class="card-text">한국/미국/중국 플랫폼</li>
+                            <li class="card-text">수집서비스 개발/공급</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-2-square-fill"></i>
+                            경제적이고 유연한 DX 파이프라인 구축
+                        </h5>
+                        <ul>
+                            <li class="card-text">MYSQL, SNOWFLAKE 이용 파이프라인 구축</li>
+                            <li class="card-text">구글 서비스를 이용한 저비용 소규모 파이프라인</li>
+                            <li class="card-text">유연한 인프라 개발/공급</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-3-square-fill"></i>
+                            안정적인 서비스 유지보수 및 운영
+                        </h5>
+                        <ul>
+                            <li class="card-text">개발-운영-유지보수 원스톱 서비스</li>
+                            <li class="card-text">백오피스 개발을 통한 운영 서비스 고도화</li>
+                            <li class="card-text">지속적인 서비스 개선</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-4-square-fill"></i>
+                            효율적인 맞춤형 데이터 컨설팅
+                        </h5>
+                        <ul>
+                            <li class="card-text">현업의 문제 해결을 위한 정학한 ISP 진행</li>
+                            <li class="card-text">고객 입장에서 효용/신뢰성 있는 분석 모델 구축</li>
+                            <li class="card-text">클래식 수리모델부터 AI 분석 모델까지 개발</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-5-square-fill"></i>
+                            데이터 기반 시장 및 사용자 조사
+                        </h5>
+                        <ul>
+                            <li class="card-text">국내/외 데이터 수집을 통한 시장 조사</li>
+                            <li class="card-text">데이터 기반 가설 검증</li>
+                            <li class="card-text">사용자 데이터 기반 의사결정 포인트 추출</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col6 col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-6-square-fill"></i>
+                            뛰어난 프로젝트 관리 역량
+                        </h5>
+                        <ul>
+                            <li class="card-text">대기업부터 스타트업까지 20년 경력 전문가</li>
+                            <li class="card-text">프로세스 이론과 현실 간의 균형 유지</li>
+                            <li class="card-text">정확하고 정성있는 커뮤니케이션</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="width-cotrol" style="margin-bottom: 30px;">
-            <img src="hnh_img/handh_logo.png" style="width: 30%;margin-top: 50px;">
-            <span class="title-text"><br class="mobile-break">data-driven decision-making service provider</span>
-            <hr>
-            <p class="sub-title-kor responsive-text">
-                데이터 기반 의사결정 위한 <br class="mobile-break">
-                커스텀 통합환경 구축으로 <br>
-                고객사 경쟁력을 강화합니다
-            </p>
-            <p>
-                2010년부터 에이치앤에이치는 대기업 안과 밖에서 전문가로서 정량적 리서치와 분석을 수행해 왔습니다. 
-                에이치앤에이치는 축적된 경험과 IT 기술을 기반으로 가설 도출과 검증을 위한 다양한 사례와 방법론을 보유하고 있으며, 
-                기업 내부에서 직접 처리하기 어려운 고난도 경쟁 데이터를 수집·제공하여 고객사의 시장 예측력을 강화합니다. 
-                또한, 전통적 모델링 기법과 AI 기반 데이터 분석을 융합해 다양한 제약 조건 하에서도 최적의 데이터 모델을 개발, 새로운 인사이트를 제시합니다.
-            </p>
+
+    <div style="width: 100%;height: 50px;"></div>
+
+    <!--본문3-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1>20년 경력,
+                    아이폰3GS 이후<br>
+                    도전적인 프로젝트들을 진행해왔습니다
+                </h1>
+            </div>
+            <div class="col-12 col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>
+                    2010년 아이폰3GS 출시 이후에 시장은 급변했습니다. 
+                    급변하는 시장을 이해하기 위해 생산, 마케팅, 전략기획, 연구소 등 기업의 다양한 부서들은
+                    각자 자신들의 목적을 달성하기 위해 이전에는 숫자로 표현할 수 없는 대상을 숫자로 설명하려는 많은 시도들을 진행해왔습니다.                     
+                    에이치앤에이치 구성멤버들은 이런 시대적 사건들의 중심에서 혁신적인 프로젝트들을 수행해왔습니다.
+                </p>
+                    * NDA 이슈로 구체적인 회사와 프로젝트 내용을 설명할 수 없음을 양해해주십시요.
+                </p>
+            </div>
+            <div class="col-12 col-md-6"></div>
         </div>
     </div>
+
+    <!--테이블-->
     <div class="container">
-        <div class="width-cotrol">
-            <div class="box" id="box">
-                <div class="box-content">
-                    <div class="number-box">1</div>
-                    <span class="box-text">강력한 웹데이터 수집<br class="mobile-break"> (스크래핑) SW 개발</span>
-                    <div class="more-info toggle"></div>
-                </div>
-                <div class="box-detail">
-                    <ul>
-                        <li class="small-text">20개 이상 플랫폼 데이터<br class="mobile-break">(배민, 네이버플레이스, 링크드인 등)<br class="mobile-break"> 서비스 경험</li>
-                        <li class="small-text">국내/국외, 웹/모바일 등 <br class="mobile-break">다양한 수집 채널에 대한 <br class="mobile-break">스크래핑 기술 보유</li>
-                    </ul>
-                </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">프로젝트 개요</th>
+                <th scope="col">수행/공급처</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>중국 기업 데이터 공급</td>
+                <td>대기업 상품기획</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>미국 플랫폼 데이터 공급 <span class="badge text-bg-primary">6개월 공급</span></td>
+                <td>대기업 UX(연)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>스마트폰OS 데이터분석 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>대기업 UX(연)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>배달 플랫폼 데이터 공급 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>프랜차이즈 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>POS 데이터 공급 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>프랜차이즈 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>자사앱 개발 컨설팅</td>
+                <td>외식기업 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>앤터프라이즈 DW구축 컨설팅</td>
+                <td>외식기업 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>ERP 개발</td>
+                <td>외식기업 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>매장 출점 예측 모델 개발</td>
+                <td>프랜차이즈 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>매출 예측 모델 개발</td>
+                <td>외식기업 본사</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>기구 품질 예측 모델 개발 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>대기업 휴대폰사업부</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>조명 데이터 예측 모델 개발 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>대기업 가전사업부</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>가전 사용자 패턴 분석 <span class="badge text-bg-primary">2년+ 공급</span></td>
+                <td>대기업 UX(연)</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>트랜스미션 시뮬레이터 GUI개발</td>
+                <td>자동차 대기업</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="width: 100%;height: 50px;"></div>
+
+    <!--본문3-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1>고객과의 신뢰를 최우선으로<br>
+                    고객사의 문제를 해결하겠습니다
+                </h1>
             </div>
-            <div class="box" id="box">
-                <div class="box-content">
-                    <div class="number-box">2</div>
-                    <span class="box-text">경제적이고 유연한<br class="mobile-break"> DX 파이프라인 구축</span>
-                    <div class="more-info toggle"></div>
-                </div>
-                <div class="box-detail">
-                    <ul>
-                        <li class="small-text">MYSQL, SNOWFLAKE 등을 <br class="mobile-break">이용한 범용 파이프라인 <br class="mobile-break">구축 기술 보유</li>
-                        <li class="small-text">구글 서비스를 이용한 <br class="mobile-break">저비용 소규모 파이프라인 공급</li>
-                    </ul>
-                </div>            
-            </div>
-            <div class="box" id="box">
-                <div class="box-content">
-                    <div class="number-box">3</div>
-                    <span class="box-text">데이터 서비스<br class="mobile-break"> 유지보수 및 운영</span>
-                    <div class="more-info toggle"></div>
-                </div>
-                <div class="box-detail">
-                    <ul>
-                        <li class="small-text">SW 운영 업무 경험을 통한 <br class="mobile-break">안정적인 서비스 가능</li>
-                        <li class="small-text">추가적인 백오피스 개발을 통해 <br class="mobile-break">운영 서비스 고도화</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box" id="box">
-                <div class="box-content">
-                    <div class="number-box">4</div>
-                    <span class="box-text">현실 업무 기반 <br class="mobile-break">고객 맞춤형 데이터 모델링</span>
-                    <div class="more-info toggle"></div>
-                </div>
-                <div class="box-detail">
-                    <ul>
-                        <li class="small-text">신규출점지 매출예측과 같은 <br class="mobile-break">클래식 모델 개발 대응 가능</li>
-                        <li class="small-text">현업 ISP 과정을 통해 <br class="mobile-break">신뢰성 있는 분석 모델 구축</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="box" id="box">
-                <div class="box-content">
-                    <div class="number-box">5</div>
-                    <span class="box-text">시장 및 사용자 조사<br class="mobile-break">분석 데이터 공급</span>
-                    <div class="more-info toggle"></div>
-                </div>
-                <div class="box-detail">
-                    <ul>
-                        <li class="small-text">국내/외 디지털 데이터 분석을 <br class="mobile-break">통한 시장 조사 수행</li>
-                        <li class="small-text">데이터 플로우 분석을 통해 <br class="mobile-break"> 사용자 패턴 데이터 도출</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section-title" style="margin: 100px 0 10px 0;">
-                주요 프로젝트 소개
-            </div>
-            <table border="1px" cellspacing="0" cellpadding="8">
-                <thead>
-                    <tr>
-                        <th>프로젝트 <br class="mobile-break"> 개요</th>
-                        <th>수행처<br class="mobile-break">/공급처</th>
-                    </tr>
-                </thead>
-                <tbody class="small-text">
-                    <tr>
-                        <td>스크래핑기술 이용, <br class="mobile-break">중국 기업 데이터 공급</td>
-                        <td>대기업 <br class="mobile-break">상품기획</td>
-                    </tr>
-                    <tr>
-                        <td>스크래핑기술 이용, <br class="mobile-break">미국 구인구직 데이터 공급</td>
-                        <td>대기업 <br class="mobile-break">UX연구소</td>
-                    </tr>
-                    <tr>
-                        <td>배달플랫폼 <br class="mobile-break"> POS데이터 공급 <br class="mobile-break"> 실서비스 운영</td>
-                        <td>프랜차이즈 <br class="mobile-break">본사</td>
-                    </tr>
-                    <tr>
-                        <td>경쟁사 데이터 스크래핑 <br class="mobile-break"> 출점지 예측 모델 개발</td>
-                        <td>프랜차이즈 <br class="mobile-break">본사</td>
-                    </tr>
-                    <tr>
-                        <td>매출 데이터 스크래핑 <br class="mobile-break"> 매출 예측 모델 개발</td>
-                        <td>프랜차이즈 <br class="mobile-break">본사</td>
-                    </tr>
-                    <tr>
-                        <td>기구 데이터 수집 <br class="mobile-break"> 예측(회귀) 모델 개발</td>
-                        <td>휴대폰 <br class="mobile-break">사업부</td>
-                    </tr>
-                    <tr>
-                        <td>사용자 조사 데이터 분석 <br class="mobile-break"> 예측(회귀) 모델 개발</td>
-                        <td>대기업 <br class="mobile-break">UX연구소</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style="font-size: 12px;">
-                *NDA 이슈로 간단한 설명만 공개합니다
-            </p>
-            <div style="margin-top: 50px;">
-                <div class="inquiry-button">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRIxb5x8Z3rTEnKOFmtVxqFJXDcwnLTPecQfx59Gl3TADq6Q/viewform?usp=dialog" target="_blank">
+            <div class="col-12 col-md-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>
+                    온/오프라인 데이터 수집문제부터 해석결과까지
+                    데이터와 관련이 있다면 어떤 주제라도 좋습니다.
+                    고객사의 문제 해결을 위해 같이 고민해드리겠습니다. 
+                </p>
+                <button class="btn btn-custom">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRIxb5x8Z3rTEnKOFmtVxqFJXDcwnLTPecQfx59Gl3TADq6Q/viewform" target="_blank">
                         문의하기
                     </a>
-                </div>  
+                </button>
             </div>
-            <hr style="margin: 50px auto;">
+            <div class="col-12 col-md-6"></div>
         </div>
     </div>
-  </main>
-  <footer>
-    <div class="container width-cotrol">
-      <p>© 2025 handh. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <script>
-    // 모든 toggle 버튼에 이벤트 리스너를 추가
-    document.querySelectorAll('.toggle').forEach(function(btn) {
-    btn.addEventListener("click", function(){
-        // 현재 버튼의 부모 박스(가장 가까운 .box)를 토글
-        var box = this.closest('.box');
-        box.classList.toggle("active");
-        this.classList.toggle("active");
-    });
-    });
-  </script>
+    <div style="width: 100%;height: 150px;"></div>
+    <script>
+        const canvas = document.getElementById("tessellationCanvas");
+        const ctx = canvas.getContext("2d");
+
+        let hexSize = 50;
+        let cols, rows, tiles, royalBlueTile;
+
+        function resizeCanvas() {
+            const ratio = window.devicePixelRatio || 1;
+            canvas.width = window.innerWidth * ratio;
+            canvas.height = 475 * ratio; // 세로 500px로 고정
+            ctx.scale(ratio, ratio);
+            createTiles();
+        }
+
+        window.addEventListener("resize", resizeCanvas);
+        resizeCanvas();
+
+        function createTiles() {
+            cols = Math.ceil(canvas.width / (hexSize * 1.5));
+            rows = Math.ceil(475 / (hexSize * Math.sqrt(3))); // 500px 높이에 맞춤
+            tiles = [];
+
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < cols; col++) {
+                    let x = col * hexSize * 1.5;
+                    let y = row * hexSize * Math.sqrt(3);
+                    if (col % 2 !== 0) y += hexSize * Math.sqrt(3) / 2;
+
+                    let isRoyalBlue = (col === 2 && row === 1); // 2열 3번째 행에 고정
+                    tiles.push({ x, y, isRoyalBlue, offset: Math.random() * Math.PI * 2 });
+                }
+            }
+
+            royalBlueTile = tiles.find(tile => tile.isRoyalBlue);
+        }
+
+        function drawHexagon(x, y, size, color) {
+            ctx.beginPath();
+            for (let i = 0; i < 6; i++) {
+                const angle = (Math.PI / 3) * i;
+                const px = x + size * Math.cos(angle);
+                const py = y + size * Math.sin(angle);
+                ctx.lineTo(px, py);
+            }
+            ctx.closePath();
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+            ctx.stroke();
+        }
+
+        let time = 0;
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            time += 0.02;
+
+            tiles.forEach(tile => {
+                let color;
+                if (tile.isRoyalBlue) {
+                    color = "#4169E1"; // 고정된 로얄 블루
+                } else {
+                    let brightness = 200 + Math.sin(time + tile.offset) * 30;
+                    let gray = Math.round(brightness);
+                    color = `rgb(${gray}, ${gray}, ${gray})`; // 무채색 애니메이션
+                }
+                drawHexagon(tile.x, tile.y, hexSize, color);
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+
+    <!-- 푸터 -->
+    <footer class="container py-4 border-top">
+        <div class="row">
+            <div class="col12 col-md-3">
+                © 2025 handh. All rights reserved.
+            </div>
+            <div class="col12 col-md-9 small-text">
+                <p>
+                    사업자등록번호: 484-56-00753 | 정보통신업/전문,과학및기술서비스업
+                </p>
+                <p>
+                    사이트관리자 이메일: <a href="mailto:example@email.com" class="text-dark text-decoration-none">hsb@handh.kr</a>
+                </p>
+                <p>
+                    개인정보 수집 및 이용 안내<br>
+                    본 웹사이트는 문의하기 버튼을 눌러 설문지를 작성하신 다음 회신하기 위한 이메일 정보를 제외한 일체 개인정보를 수집하지 않습니다.
+                    따라서 이 사이트는 방문자의 데이터를 저장하거나 추적하는 쿠키, 애널리틱스, 회원가입 기능을 전혀 사용하지 않습니다.  
+                    그 결과, 별도의 개인정보처리방침 컨텐츠와 해당 컨텐츠의 사용자 수락 과정을 운영하지 않으며 방문자는 자신의 문의 정보 파기를 본사에 요청할 권리가 있음을 고지합니다. 
+                    본사는 문의자의 요청 이후 영업일 기준 3일 이내 해당 정보를 완전히 삭제하며 삭제 내용을 문의자에게 이메일으로 통보하게 됩니다. 
+                    본사의 역할은 데이터 삭제 및 통보까지이며 삭제 통보 이메일을 문의자가 확인하지 못해 생기는 일에 대해 본사는 책임지지 않습니다.
+                    이 사이트의 문의하기 버튼을 눌러 설문지를 작성한 것은 본 내용에 동의한 것으로 간주합니다.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
 
   <!-- Bootstrap JS 및 Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybp7JgD9fTf1si5dSRnKl1Th0sXwGp/tiCxDpm2uG32k9zLO3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0b0xhvqkYIuS+oz68SR6QjR1Qyk5kQDoPeFowxkPpP5KEx2R" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
