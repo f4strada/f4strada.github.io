@@ -1,0 +1,57 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: white;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    overscroll-behavior: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: auto 10px;
+}
+
+.grid-margin {
+    margin: 10px 0px 0px 0px;
+}
+
+.btn-custom {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* 호버 시 로열 블루 적용 */
+.btn-custom:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.small-text{
+    text-align: left;
+    font-size: 8pt;
+    margin: 0;
+}
+
+/* 기본 상태 (웹)에서는 첫 번째 줄바꿈을 없애기 */
+.mobile-break {
+    display: none;
+}
+
+/* 모바일(화면 너비 768px 이하)에서는 첫 번째 줄바꿈 활성화 */
+@media (max-width: 768px) {
+    .mobile-break {
+        display: inline;
+    }
+}
